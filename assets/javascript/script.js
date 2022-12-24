@@ -189,6 +189,7 @@ function reset_game() {
     document.getElementById("b7").value = '';
     document.getElementById("b8").value = '';
     document.getElementById("b9").value = '';
+    
 }
 // check player turn
 let flag = 1
