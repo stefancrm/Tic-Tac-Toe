@@ -1,3 +1,21 @@
+// function to diable html elements
+function disableBut() {
+    for( n = 1; n < 10; ++n) {
+        document.getElementById("b"+n).disabled = true;
+    }
+}
+
+function playerWin(n) {
+    if (n === "x") {
+        document.getElementById('turn').innerHTML = "Player X won";
+        disableBut();
+    } else if (n === "0") {
+        document.getElementById('turn').innerHTML = "Player 0 won";
+        disableBut();
+    } else {
+        document.getElementById('turn').innerHTML = "Draw game";
+    }
+}
 // function for user click on a tab
 function check() {
 
@@ -15,151 +33,55 @@ function check() {
 
     //check if Player X won
     if ((b1 == "x") && (b2 == "x") && (b3 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("x");
+        
     } else if ((b1 == "x") && (b4 == "x") && (b7 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("x");
+       
     } else if ((b7 == "x") && (b8 == "x") && (b9 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
+        playerWin("x");
+       
     } else if ((b3 == "x") && (b6 == "x") && (b9 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
+        playerWin("x");
+       
     } else if ((b1 == "x") && (b5 == "x") && (b9 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
+        playerWin("x");
+      
     } else if ((b3 == "x") && (b5 == "x") && (b7 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("x");
+        
     } else if ((b2 == "x") && (b5 == "x") && (b8 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("x");
+       
     } else if ((b4 == "x") && (b5 == "x") && (b6 == "x")) {
-        document.getElementById('turn').innerHTML = "Player X won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("x");
+       
     } 
     //check if Player 0 won
     else if ((b1 == "0") && (b2 == "0") && (b3 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("0");
+       
     } else if ((b1 == "0") && (b4 == "0") && (b7 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("0");
+       
     } else if ((b7 == "0") && (b8 == "0") && (b9 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b6").disabled = true;
+        playerWin("0");
+       
     } else if ((b3 == "0") && (b6 == "0") && (b9 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b5").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
+        playerWin("0");
+      
     } else if ((b1 == "0") && (b5 == "0") && (b9 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
+        playerWin("0");
+       
     } else if ((b3 == "0") && (b5 == "0") && (b7 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("0");
+       
     } else if ((b2 == "0") && (b5 == "0") && (b8 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b4").disabled = true;
-        document.getElementById("b6").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("0");
+     
     } else if ((b4 == "0") && (b5 == "0") && (b6 == "0")) {
-        document.getElementById('turn').innerHTML = "Player 0 won";
-        // disable all other fields
-        document.getElementById("b1").disabled = true;
-        document.getElementById("b2").disabled = true;
-        document.getElementById("b3").disabled = true;
-        document.getElementById("b7").disabled = true;
-        document.getElementById("b8").disabled = true;
-        document.getElementById("b9").disabled = true;
+        playerWin("0");
+      
     }
     // check if the game is a draw
     else if ((b1 == "x" || b1 == "0") && (b2 == "x" || b2 == "0") &&
@@ -167,7 +89,7 @@ function check() {
             (b5 == "x" || b5 == "0") && (b6 == "x" || b6 == "0") &&
             (b7 == "x" || b7 == "0") && (b8 == "x" || b8 == "0") &&
             (b9 == "x" || b9 == "0")) {
-        document.getElementById('turn').innerHTML = "Draw game";
+                playerWin("draw");
     } else {
         //player turn
         if (flag == 1) {
