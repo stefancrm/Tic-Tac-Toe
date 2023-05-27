@@ -47,7 +47,7 @@ function check() {
 
 }
 //reset game function
-function reset_game() {
+function resetGame() {
     location.reload();
     for (var i = 1; i <= 9; i++) {
         document.getElementById("b" + i).value = '';
@@ -56,7 +56,7 @@ function reset_game() {
 // check player turn
 let flag = 1
 // function for clicking a cell
-function click_cell(value) {
+function clickCell(value) {
     if (flag == 1) {
         document.getElementById(value).value = "x";
         document.getElementById(value).disabled = true;

@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-gamepad"></i></span><span>Tic-tac-toe</span></a><button class="btn btn-primary" type="button" onclick="reset_game()">Start Game</button></div>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-gamepad"></i></span><span>Tic-tac-toe</span></a><button class="btn btn-primary" type="button" onclick="resetGame()">Start Game</button></div>
     </nav>
     <section class="py-4 py-xl-5">
         <div class="container">
@@ -35,19 +35,19 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td><input id="b1" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b2" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b3" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
+                                        <td><input id="b1" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b2" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b3" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
                                     </tr>
                                     <tr>
-                                        <td><input id="b4" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b5" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b6" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
+                                        <td><input id="b4" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b5" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b6" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
                                     </tr>
                                     <tr>
-                                        <td><input id="b7" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b8" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
-                                        <td><input id="b9" type="text" class="game_button" onclick="click_cell(this.id);  check();" readonly></td>
+                                        <td><input id="b7" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b8" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
+                                        <td><input id="b9" type="text" class="game_button" onclick="clickCell(this.id);  check();" readonly></td>
                                     </tr>
                                 </tbody>
                             </table>
